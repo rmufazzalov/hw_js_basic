@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Задание 5.
+        const en = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
+        const ru = ["понедельник", "вторник", "среда", "четверг", "пятница", "суббота", "воскресенье"];
+
+        class week {
+            constructor(eng, rus) {
+                for (let i = 0; i < eng.length; i++) {
+                    this[eng[i]] = rus[i];
+                }
+            }
+        }
+
+        const objWeek = new week(en, ru);
+        console.log(objWeek);
+
+    </script>
+</body>
+
+</html>
